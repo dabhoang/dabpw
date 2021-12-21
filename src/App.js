@@ -27,6 +27,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import resume from './DanHoang_Resume.pdf';
 import davis from './davis.jpg'
+import {useEffect} from "react";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -52,13 +53,13 @@ const tablabel = createTheme({
 
 
 
-
-
-
-
-
-export default function BasicExample() {
-
+export default function App() {
+  useEffect(() => {
+     document.title = "Dan Hoang";  
+   }, []);
+  //componentDidMount() {
+    //document.title = "Dan Hoang"; 
+  //}
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
@@ -75,12 +76,6 @@ export default function BasicExample() {
               <Tab label="Projects" to="/projects" component={Link}/>
             </Tabs>
             </Grid>
-
-
-
-
-
-
 
             
 
@@ -127,16 +122,18 @@ function Home() {
   };
 
   const emaillabel = createTheme({
-  typography: {
-    fontFamily: 'Arial',
-    button:{
-      textTransform: 'none',
-      fontSize: 16,
-    }
-  },
-});
+    typography: {
+      fontFamily: 'Arial',
+        button:{
+        textTransform: 'none',
+        fontSize: 16,
+      }
+    },
+  });
 
+  
   return (
+        //<title>Dan Hoang</title>
         <div class="center">
           <h1>Dan Hoang</h1>
           <img src={profilepic} width="400" height="400" class = "profpic"></img>
