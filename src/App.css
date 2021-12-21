@@ -46,6 +46,8 @@
   border-radius: 50%;
 }
 .margined {
-  border-left: 50px solid white;
-  border-right: 50px solid white;
+  margin: auto;
+  width: 50%;
 }
+
+

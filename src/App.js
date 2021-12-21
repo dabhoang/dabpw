@@ -197,7 +197,7 @@ function Home() {
 function About() {
   return (
     <div class = "margined">
-      <h1>About</h1>
+      <h1 class="center">About</h1>
         <p>Hi! I'm currently pursuing a Master of Science in Computer Science at University of California, Davis, looking to graduate in June 2022. 
         I graduated with a Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major. 
         My goal upon graduation from UC Davis is to become a software engineer.
@@ -217,7 +217,7 @@ function About() {
 function Experience() {
   return (
     <div class = "margined">
-      <h1>Experience</h1>
+      <h1 class="center">Experience</h1>
         <h2>GaoTek Inc.</h2>
           <img src={gaotek} alt="GAOTek Inc."></img>
           <h3>Software Development Intern</h3>
@@ -274,7 +274,7 @@ function Experience() {
 function Projects() {
   return (
     <div class = "margined">
-      <h1>Projects</h1>
+      <h1 class="center">Projects</h1>
         <h2>resilientDB</h2>
           <h3>December 2020</h3>
           <ul>
