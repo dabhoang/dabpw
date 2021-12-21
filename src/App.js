@@ -26,7 +26,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import resume from './DanHoang_Resume.pdf';
-
+import davis from './davis.jpg'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -170,10 +170,11 @@ function Home() {
 
 function About() {
   return (
-    <div>
+    <div class = "margined">
       <h1>About</h1>
-        <p>Hi! I'm currently pursuing a Master of Science in Computer Science at University of California, Davis. 
-        I received my Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major.
+        <p>Hi! I'm currently pursuing a Master of Science in Computer Science at University of California, Davis, looking to graduate in June 2022. 
+        I graduated with a Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major. 
+        My goal upon graduation from UC Davis is to become a software engineer.
         </p>
         
         
@@ -189,15 +190,18 @@ function About() {
 
 function Experience() {
   return (
-    <div>
+    <div class = "margined">
       <h1>Experience</h1>
         <h2>GaoTek Inc.</h2>
           <img src={gaotek} ></img>
           <h3>Software Development Intern</h3>
-          <h3>July 2021 - present</h3>
+          <h3>August 2021 - November 2021</h3>
             <ul>
-              <li>Perform research on standards for Group 3 facsimile communication over IP networks </li>
-              <li>Collaborate with other interns to develop communications protocols according to those standards</li>
+              <li>Developed a Python script to extract necessary client data from a CSV file containing 200,000+ clients</li>
+              <li>Provided the senior engineers with feedback regarding documentation and unit testing of a company software product</li>
+              <li>Wrote Python scripts to improve search engine optimization (SEO) of the company’s website and content</li>
+              <li>Performed research on standards for Group 3 facsimile communication over IP networks</li>
+              <li>Collaborated with other interns to design communications protocols according to those standards</li>
             </ul>
         <br />
         <br />
@@ -214,7 +218,17 @@ function Experience() {
         <br />
         <br />
 
-        <h2>UCSC CSE Department</h2>
+        <h2>UC Davis CS Department</h2>
+          <img src={davis} ></img>
+          <h3>Teaching Assistant</h3>
+          <h3>September 2021 - present</h3>
+            <ul>
+              <li>Helped students with debugging programming assignments in C++ and RISC-V assembly language</li>
+            </ul>
+        <br />
+        <br />
+
+        <h2>UC Santa Cruz CSE Department</h2>
           <img src={baskin} ></img>
           <h3>Grader / Reader</h3>
           <h3>March 2020 - June 2020</h3>
@@ -233,7 +247,7 @@ function Experience() {
 
 function Projects() {
   return (
-    <div>
+    <div class = "margined">
       <h1>Projects</h1>
         <h2>resilientDB</h2>
           <h3>December 2020</h3>
