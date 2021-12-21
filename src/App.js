@@ -1,9 +1,8 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import './App.css';
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
@@ -14,14 +13,14 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
+//import Typography from '@material-ui/core/Typography';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import profilepic from './dabhoang.jpg';
 import gaotek from './gaotek.jpg';
 import wd from './wd.jpg';
 import baskin from './baskin.jpg';
-import Icon from '@material-ui/core/Icon';
+//import Icon from '@material-ui/core/Icon';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -114,14 +113,14 @@ export default function App() {
 // in your app.
 
 function Home() {
-  const openResume = () => {
+  /*const openResume = () => {
     const link = document.createElement("a");
     link.download = `DanHoang_Resume.pdf`;
     link.href = "DanHoang_Resume.pdf";
     link.click();
-  };
+  };*/
 
-  const emaillabel = createTheme({
+  /*const emaillabel = createTheme({
     typography: {
       fontFamily: 'Arial',
         button:{
@@ -129,14 +128,14 @@ function Home() {
         fontSize: 16,
       }
     },
-  });
+  });*/
 
   
   return (
         //<title>Dan Hoang</title>
         <div class="center">
           <h1>Dan Hoang</h1>
-          <img src={profilepic} width="400" height="400" class = "profpic"></img>
+          <img src={profilepic} alt="Dan Hoang profile pic" width="400" height="400" class = "profpic"></img>
           <h2>Aspiring Software Engineer</h2>
           <h2>Computer Science M.S. student at University of California, Davis</h2>
           <h2>Computer Science B.S. graduate from University of California, Santa Cruz</h2>
@@ -190,7 +189,7 @@ function Experience() {
     <div class = "margined">
       <h1>Experience</h1>
         <h2>GaoTek Inc.</h2>
-          <img src={gaotek} ></img>
+          <img src={gaotek} alt="GAOTek Inc."></img>
           <h3>Software Development Intern</h3>
           <h3>August 2021 - November 2021</h3>
             <ul>
@@ -204,7 +203,7 @@ function Experience() {
         <br />
 
         <h2>Western Digital Corporation</h2>
-          <img src={wd} ></img>
+          <img src={wd} alt="Western Digital Corporation"></img>
           <h3>Systems Design Engineering Intern</h3>
           <h3>June 2018 - September 2018</h3>
             <ul>
@@ -216,7 +215,7 @@ function Experience() {
         <br />
 
         <h2>UC Davis CS Department</h2>
-          <img src={davis} ></img>
+          <img src={davis} alt="UC Davis"></img>
           <h3>Teaching Assistant</h3>
           <h3>September 2021 - present</h3>
             <ul>
@@ -226,7 +225,7 @@ function Experience() {
         <br />
 
         <h2>UC Santa Cruz CSE Department</h2>
-          <img src={baskin} ></img>
+          <img src={baskin} alt="UC Santa Cruz Baskin"></img>
           <h3>Grader / Reader</h3>
           <h3>March 2020 - June 2020</h3>
             <ul>
