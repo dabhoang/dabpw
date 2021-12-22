@@ -82,7 +82,7 @@ export default function App() {
   useEffect(() => {
      document.title = "Dan Hoang";  
    }, []);
-  const classes = useStyles()
+  //const classes = useStyles()
   //componentDidMount() {
     //document.title = "Dan Hoang"; 
   //}
