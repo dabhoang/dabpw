@@ -13,7 +13,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import {makeStyles} from '@material-ui/core'
+//import {makeStyles} from '@material-ui/core'
 //import Typography from '@material-ui/core/Typography';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -50,33 +50,7 @@ const tablabel = createTheme({
   },
 });
 
-/*const homelabel = createTheme({
-  typography: {
-    fontFamily: 'Arial',
-    button:{
-      textTransform: 'none',
-      fontSize: 16,
-    }
-  },
-});*/
 
-const useStyles = makeStyles({
-      homelabel:{
-        fontFamily: 'Arial',
-        button:{
-          textTransform: 'none',
-          fontSize: 16,
-        }
-      },
-      tablabel:{
-        fontFamily: 'Arial',
-        button:{
-          textTransform: 'none',
-          fontSize: 16,
-        }
-      }
-
-})
 
 export default function App() {
   useEffect(() => {
