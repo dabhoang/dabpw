@@ -19,15 +19,12 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
 import profilepic from './dabhoang.jpg';
-import gaotek from './gaotek.jpg';
-import wd from './wd.jpg';
-import baskin from './baskin.jpg';
+import gradday from './grad.jpg';
 //import Icon from '@material-ui/core/Icon';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import resume from './DanHoang_Resume.pdf';
-import davis from './davis.jpg'
 import {useEffect} from "react";
 
 // This site has 3 pages, all of which are rendered
@@ -172,14 +169,13 @@ function About() {
   return (
     <div class = "margined">
       <h1 class="center">About</h1>
-        <p>Hi! I'm currently pursuing a Master of Science in Computer Science at University of California, Davis, looking to graduate in June 2022. 
+        <p>Hi! I'm Dan Hoang and I'm currently pursuing a Master of Science in Computer Science at University of California, Davis with an expected graduation in June 2022. 
         I graduated with a Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major. 
         My goal upon graduation from UC Davis is to become a software engineer.
+
+
         </p>
-        
-        
-
-
+      <img src={gradday} alt="Dan Hoang grad" class="graddaypic"></img>
     </div>
   );
 }
@@ -193,7 +189,6 @@ function Experience() {
     <div class = "margined">
       <h1 class="center">Experience</h1>
         <h2>GaoTek Inc.</h2>
-          <img src={gaotek} alt="GAOTek Inc."></img>
           <h3>Software Development Intern</h3>
           <h3>August 2021 - November 2021</h3>
             <ul>
@@ -207,19 +202,16 @@ function Experience() {
         <br />
 
         <h2>Western Digital Corporation</h2>
-          <img src={wd} alt="Western Digital Corporation"></img>
           <h3>Systems Design Engineering Intern</h3>
           <h3>June 2018 - September 2018</h3>
             <ul>
-              <li>Developed ULINK Drive Master’s Power States Stress Test scripts for WDC NVMe devices</li>
-              <li>Ensured that the drives were robust and complied with NVMe specifications</li>
-              <li>Gained experience in computer systems and NVMe devices</li>
+              <li>Developed ULINK Drive Master’s Power States Stress Test scripts for WDC NVMe devices using an in house C library</li>
+              <li>Ensured that the drives produced by the company were robust and complied with NVMe specifications</li>
             </ul>
         <br />
         <br />
 
         <h2>UC Davis CS Department</h2>
-          <img src={davis} alt="UC Davis"></img>
           <h3>Teaching Assistant</h3>
           <h3>September 2021 - present</h3>
             <ul>
@@ -229,7 +221,6 @@ function Experience() {
         <br />
 
         <h2>UC Santa Cruz CSE Department</h2>
-          <img src={baskin} alt="UC Santa Cruz Baskin"></img>
           <h3>Grader / Reader</h3>
           <h3>March 2020 - June 2020</h3>
             <ul>
@@ -249,6 +240,15 @@ function Projects() {
   return (
     <div class = "margined">
       <h1 class="center">Projects</h1>
+
+        <h2>Personal Website</h2>
+          <h3>December 2021</h3>
+          <ul>
+            <li>Created a personal website to display my professional background using React.js and Material UI</li>
+            <li>Utilized Netlify to successfully deploy my website - https://dabhoang.netlify.app/</li>
+          </ul>
+          <br />
+
         <h2>resilientDB</h2>
           <h3>December 2020</h3>
           <ul>
@@ -256,14 +256,6 @@ function Projects() {
               <li>Collaborated on a team of 5 to implement the Raft consensus algorithm</li>
             </ul>
             <br />
-
-        <h2>Personal Website</h2>
-          <h3>September 2020</h3>
-          <ul>
-            <li>Built a personal website to display my professional background using HTML and CSS</li>
-            <li>Successfully deployed the website using Github pages - https://dabhoang.github.io/</li>
-          </ul>
-          <br />
 
         <h2>RosterSearch</h2>
           <h3>October 2020</h3>
