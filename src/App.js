@@ -215,7 +215,7 @@ function Experience() {
           <h3>Teaching Assistant</h3>
           <h3>September 2021 - present</h3>
             <ul>
-              <li>Helped students with debugging programming assignments in C++ and RISC-V assembly language</li>
+              <li>Helped students with debugging programming assignments in C, C++, RISC-V assembly, and x86 assembly</li>
             </ul>
         <br />
         <br />
