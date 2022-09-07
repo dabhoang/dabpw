@@ -138,7 +138,7 @@ function Home() {
           <h1>Dan Hoang</h1>
           <img src={profilepic} alt="Dan Hoang profile pic" width="400" height="400" class = "profpic"></img>
           <h2>Aspiring Software Engineer</h2>
-          <h2>Computer Science M.S. student at University of California, Davis</h2>
+          <h2>Computer Science M.S. graduate from University of California, Davis</h2>
           <h2>Computer Science B.S. graduate from University of California, Santa Cruz</h2>
           
           <Button variant="contained" href="https://www.linkedin.com/in/dabhoang/" color="primary" startIcon={<LinkedInIcon />}>
@@ -169,9 +169,9 @@ function About() {
   return (
     <div class = "margined">
       <h1 class="center">About</h1>
-        <p>Hi! I'm Dan Hoang and I'm currently pursuing a Master of Science in Computer Science at University of California, Davis with an expected graduation in June 2022. 
+        <p>Hi! I'm Dan Hoang and I graduated with a Master of Science in Computer Science at University of California, Davis in September 2022. 
         I graduated with a Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major. 
-        My goal upon graduation from UC Davis is to become a software engineer.
+        I am currently looking for a software engineer position.
 
 
         </p>
@@ -192,11 +192,9 @@ function Experience() {
           <h3>Software Development Intern</h3>
           <h3>August 2021 - November 2021</h3>
             <ul>
-              <li>Developed a Python script to extract necessary client data from a CSV file containing 200,000+ clients</li>
+              <li>Utilized Python to convert a file containing raw data for 200,000+ clients into CSV format for parsing</li>
+              <li>Developed a Python script to extract necessary data from each client’s record in the reformatted file</li>
               <li>Provided the senior engineers with feedback regarding documentation and unit testing of a company software product</li>
-              <li>Wrote Python scripts to improve search engine optimization (SEO) of the company’s website and content</li>
-              <li>Performed research on standards for Group 3 facsimile communication over IP networks</li>
-              <li>Collaborated with other interns to design communications protocols according to those standards</li>
             </ul>
         <br />
         <br />
@@ -213,9 +211,10 @@ function Experience() {
 
         <h2>UC Davis CS Department</h2>
           <h3>Teaching Assistant</h3>
-          <h3>September 2021 - present</h3>
+          <h3>September 2021 - June 2022</h3>
             <ul>
               <li>Helped students with debugging programming assignments in C, C++, RISC-V assembly, and x86 assembly</li>
+              <li>Provided explanations and answered student questions relating to the course content</li>
             </ul>
         <br />
         <br />
@@ -241,6 +240,34 @@ function Projects() {
     <div class = "margined">
       <h1 class="center">Projects</h1>
 
+
+        <h2>Blob Boi</h2>
+          <h3>June 2022</h3>
+          <ul>
+              <li>Created a game using Unity and C# where the player manipulates gravity in order to save as many fish as possible</li>
+              <li>mplemented transitions between multiple scenes including the title, prologue, gameplay, ending, and game over scenes</li>
+              <li>Implemented heads up display features including the current score as well as bubbles to denote the number of lives left</li>
+            </ul>
+            <br />
+
+
+        <h2>American Sign Language Classifier</h2>
+          <h3>March 2022</h3>
+          <ul>
+              <li>Built a convolutional neural network using PyTorch to classify images of letters in the American Sign Language alphabet</li>
+              <li>Trained the model using images from the Sign Language MNIST dataset</li>
+            </ul>
+            <br />
+
+
+        <h2>Digit Classifier</h2>
+          <h3>December 2020</h3>
+          <ul>
+              <li>Implemented the k nearest neighbors machine learning algorithm in Python to classify MNIST handwritten digits</li>
+              <li>Used matplotlib to create visualizations in order to analyze the effects of different parameters on accuracy</li>
+            </ul>
+            <br />
+
         <h2>Personal Website</h2>
           <h3>December 2021</h3>
           <ul>
@@ -249,28 +276,9 @@ function Projects() {
           </ul>
           <br />
 
-        <h2>resilientDB</h2>
-          <h3>December 2020</h3>
-          <ul>
-              <li>A high throughput yielding permissioned blockchain fabric/distributed database system written in C++</li>
-              <li>Collaborated on a team of 5 to implement the Raft consensus algorithm</li>
-            </ul>
-            <br />
+        
 
-        <h2>RosterSearch</h2>
-          <h3>October 2020</h3>
-          <ul>
-            <li>Implemented a Python script that filters students on a roster, which is a CSV file, by matching patterns</li>
-            <li>Performed unit testing on the functions involved in the script using Python’s unittest framework</li>
-          </ul>
-          <br />
 
-        <h2>Collect</h2>
-          <h3>April 2019</h3>
-          <ul>
-            <li>Created a command line based game in Java where the user travels through multiple cities to collect points</li>
-            <li>Implemented breadth first search to determine connectivity of cities and shortest distance to items</li>
-          </ul>
     </div>
   );
 }
