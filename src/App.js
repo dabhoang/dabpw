@@ -137,7 +137,7 @@ function Home() {
         <div class="center">
           <h1>Dan Hoang</h1>
           <img src={profilepic} alt="Dan Hoang profile pic" width="400" height="400" class = "profpic"></img>
-          <h2>Aspiring Software Engineer</h2>
+          <h2>Software Engineer at Brooks Automation</h2>
           <h2>Computer Science M.S. graduate from University of California, Davis</h2>
           <h2>Computer Science B.S. graduate from University of California, Santa Cruz</h2>
           
@@ -152,7 +152,7 @@ function Home() {
           </Button>
           
           <br/>
-          <h2>Contact:<br/>danhoang@ucdavis.edu</h2>
+          <h2>Contact:<br/>dabhoang24@gmail.com</h2>
 
 
 
@@ -169,9 +169,8 @@ function About() {
   return (
     <div class = "margined">
       <h1 class="center">About</h1>
-        <p>Hi! I'm Dan Hoang and I graduated with a Master of Science in Computer Science at University of California, Davis in September 2022. 
+        <p>Hi! I'm Dan Hoang and I am currently working as a software engineer at Brooks Automation.  I graduated with a Master of Science in Computer Science at University of California, Davis in September 2022 and 
         I graduated with a Bachelor of Science in Computer Science from University of California, Santa Cruz in June 2020 with Honors in the Major. 
-        I am currently looking for a software engineer position.
 
 
         </p>
@@ -188,6 +187,40 @@ function Experience() {
   return (
     <div class = "margined">
       <h1 class="center">Experience</h1>
+        <h2>Brooks Automation</h2>
+          <h3>Software Engineer</h3>
+          <h3>Full Time: February 2023 - present</h3>
+          
+            <ul>
+              <li>Streamlined 7 manufacturing procedures by designing and developing a WPF .NET GUI that uses the Model-View-ViewModel architecture pattern and sends commands to a FRU using the company’s API</li>
+              <li>Collaborated with the electrical team to ensure the software implementation of the streamlined procedures meet hardware requirements</li>
+              <li>Developed a feature in C# to generate reports of a manufacturing process’s results and data in .csv and .txt formats</li>
+              <li>Designed and developed a feature in the C#/.NET application that runs in the Linux operating system of a product delivered to a customer ranked in the top 10 companies of the semiconductor industry according to multiple rankings</li>
+              <li>Streamlined 3 additional manufacturing procedures by implementing REST API requests in C# to the company’s Swagger server in order to receive the feed and set the settings of Raspberry Pi cameras</li>
+              <li>Increased the number of possible hardware FRU configurations that a WPF .NET application can be used for by allowing the user to specify additional configurations in an xml file and using C# to read in the new configurations</li>
+              <li>Updated a feature in a WPF .NET application to use more recent data from a MySQL database when displaying graphs and performing calculations</li>
+            </ul>
+            <h3>Contractor: October 2022 - February 2023</h3>
+            <ul>
+              <li>Developed a feature in an operation of the company’s main API that is shipped to all customers to support additional configurations of hardware</li>
+              <li>Fixed a bug in an operation of the company’s main API that is sent out to customers</li>
+              <li>Wrote test scripts using Python to automate test cases for developed features</li>
+            </ul>
+        <br />
+        <br />
+
+        <h2>Xtended Reality Labs - University of California, Davis</h2>
+          <h3>Researcher (Volunteer)</h3>
+          <h3>October 2021 - September 2022</h3>
+            <ul>
+              <li>Created a 3D virtual reality multiplayer game using Unity and C# where players move around to collect points</li>
+              <li>Utilized the Mirror networking library to ensure that the state of the game is consistent for all players</li>
+              <li>Collaborated with other lab members to ensure the game is playable on the lab’s Oculus devices</li>
+              <li>Collaborated with the professor and other lab members to ensure a smooth handoff so that the game is usable for the lab’s next objectives</li>
+            </ul>
+        <br />
+        <br />
+
         <h2>GaoTek Inc.</h2>
           <h3>Software Development Intern</h3>
           <h3>August 2021 - November 2021</h3>
